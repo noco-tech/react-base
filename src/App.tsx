@@ -1,11 +1,9 @@
-import { ReactElement } from 'react';
+import { VFC } from 'react';
 
-function App(): ReactElement {
-  return (
-    <div>
-      <p>Sample Page</p>
-    </div>
-  );
-}
+const App: VFC = () => (
+  <div>
+    <p>Sample Page</p>
+  </div>
+);
 
 export default App;

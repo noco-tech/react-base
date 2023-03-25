@@ -13,7 +13,7 @@ const Header: React.FC<RouteComponentProps> = ({ location }) => {
       </Link>
 
       <Link className={path === '/clip' ? 'active' : 'inactive'} to="/clip">
-        後で読む記事
+        後で読む
       </Link>
     </div>
   );

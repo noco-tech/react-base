@@ -11,13 +11,13 @@ button {
 
   &.clicked {
     color: #fff;
-    background-color: darkblue;
-    border-color: darkblue;
+    background-color: #262A56;
+    border-color: #262A56;
   }
 
   &.unclicked {
-    color: darkblue;
+    color: #262A56;
     background-color: #fff;
-    border-color: darkblue;
+    border-color: #262A56;
   }
 }

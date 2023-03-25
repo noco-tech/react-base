@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-radius: 7px;
 
   .image {
     height: 70%;
@@ -17,7 +18,7 @@
 
   .clip {
     padding: 5px;
-    color: green;
+    color: #262A56;
     align-self: flex-end;
   }
 }

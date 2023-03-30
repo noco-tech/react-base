@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable arrow-body-style */
 /* eslint-disable import/no-cycle */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
@@ -37,10 +38,20 @@ const ArticleCard: React.FC<Props> = ({ article }) => {
 
   return (
     <div className="card">
-      <div
-        className="image"
-        style={{ backgroundImage: `url(${article.urlToImage})` }}
-      />
+      {article.urlToImage ? (
+        // <div
+        //   className="image"
+        //   style={{ backgroundImage: `url(${article.urlToImage})` }}
+        // />
+        <img src={article.urlToImage} className="image" alt="news image" />
+      ) : (
+        <img
+          src="https://cdn.pixabay.com/photo/2021/09/02/16/48/cat-6593947_960_720.jpg"
+          alt="no image"
+          className="image"
+        />
+      )}
+
       <div className="title">
         <a href={article.url} target="_blank" rel="noopener noreferrer">
           {article.title.slice(0, 80)}...

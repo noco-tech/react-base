@@ -1,10 +1,11 @@
 .card {
-  height: 300px;
+  height: 25rem;
   background-color: #eee;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border-radius: 7px;
+  overflow: wrap;
 
   .image {
     height: 70%;
